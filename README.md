@@ -254,3 +254,16 @@ this, two changes need to be made:
    `#[nutype(validate(not_empty, ...))]`
 2. In all `impl` blocks where we create `fn formatted_error`, change
    `StructError::Missing` to `StructError::Empty`.
+
+### Steps
+0. Installar postgress => choco install postgresql -y
+ 0.1 cargo install diesel_cli --no-default-features --features postgres
+1. cargo run -p project-init  
+2. cargo install just
+3. just serve-frontend 
+4. just doc
+5. just doc --open 
+
+### Check changes
+1. Commit my changes
+git diff main intro-setup
